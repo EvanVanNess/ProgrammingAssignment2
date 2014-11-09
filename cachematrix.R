@@ -1,4 +1,7 @@
+## We calculate the inverse of a matrix and save it to the cache in order to save possible future calculation
 
+
+## The makeCacheMatrix sets a matrix, gets a matrix, sets its inverse, and gets its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
@@ -15,7 +18,7 @@ makeCacheMatrix <- function(x = matrix()) {
   }
 
 
-
+## We check to see if the inverse has already been calculated.  If so, we return it.  If not, then we calculate the inverse.m
 
 cacheSolve <- function(x, ...) {
     m <- x$getInverse()
